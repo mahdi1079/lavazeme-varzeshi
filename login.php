@@ -33,7 +33,7 @@ include("header.html");
 </div>
 
 <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3" onclick="ngh()" id="log">Confirm identity</button>
+    <button type="submit" class="btn btn-primary mb-3" onclick="ngh()" id="log">ورود</button>
   </div>
 <script src="login.js"></script>
 <?php
