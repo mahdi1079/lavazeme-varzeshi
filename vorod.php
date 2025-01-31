@@ -1,7 +1,7 @@
 <?php
 include("header.html");
 ?>
-<section id="d6" class="col-10 list-inline m-2 card ">
+<section id="d6" class="col-10 list-inline m-2 card shadow ">
 
 
 
