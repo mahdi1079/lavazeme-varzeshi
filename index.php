@@ -1,5 +1,8 @@
 <?php
 include("header.html");
+$a=mysqli_connect("localhost","root","","mahsol");
+$b=mysqli_query($a,"SELECT * FROM `mahsol`");
+mysqli_close($a);
 ?>
 
 <section class=" container m-1">
@@ -25,26 +28,39 @@ include("header.html");
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-
-<div class=" px-4 text-center m-1">
+    <div class=" px-4 text-center m-1">
 
 </div>
 </div>
 <div class="card p-3 m-1 shadow" >
     <div class="col-12 row ">
 
+    <?php
+$row=mysqli_fetch_array($b);
+while($row)
+{
+?>
+
+
+
 <div class="card col-12 col-md-3 m-1 " style="width: 18rem;">
-  <img src="4/2.jpg" class="card-img-top " alt="...">
+  <img src="..." class="card-img-top " alt="...">
   <div class="card-body">
-    <h5 class="card-title">لباس تیم ملی آژانتین 1</h5>
-    <p class="card-text">قیمت: 250,000 ریال</p>
-    <a href="l.php" class="btn btn-primary">خرید</a>
+    <h5 class="card-title"><?php echo($row["name"]);?></h5>
+    <p class="card-text"><?php echo($row["ghymat"]);?></p>
+    <a href="<?php echo($row["idd"]);?>" class="btn btn-primary">خرید</a>
+    <button><a href="edit.php?id=<?php echo($row["id"]); ?>">*</a></button>
+    <button><a href="delete.php?id=<?php echo($row["id"]); ?>">-</a></button>
+    
   </div>
 </div>
 
+<?php
+$row=mysqli_fetch_array($b);
+}
+?>
 
-<div class="card col-12 col-md-3 m-1 " style="width: 18rem;">
+<!-- <div class="card col-12 col-md-3 m-1 " style="width: 18rem;">
   <img src="4/322.webp" class="card-img-top " alt="...">
   <div class="card-body">
     <h5 class="card-title">میز تنیس 1</h5>
@@ -69,7 +85,7 @@ include("header.html");
     <p class="card-text">قیمت: 400,000 ریال</p>
     <a href="tf.php" class="btn btn-primary">خرید</a>
   </div>
-</div>
+</div> -->
 
 </div>
     </div>

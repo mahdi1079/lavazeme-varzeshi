@@ -1,0 +1,22 @@
+<?php
+include("header.html");
+$name=$_POST["name"];
+$ghymat=$_POST["ghymat"];
+$a=mysqli_connect("localhost","root","","mahsol");
+$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`) VALUES ('$name','$ghymat');");
+mysqli_close($a);
+?>
+<?php
+if($b)
+{
+ ?>
+ <script>
+    location.replace("index.php");
+ </script>   
+ <?php
+}else
+echo("خطا");
+?>
+<?php
+include("footer.html");
+?>
