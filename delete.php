@@ -1,5 +1,6 @@
 <?php
-include("header.html");
+include("header.php");
+
 $id=$_GET["id"];
 $a=mysqli_connect("localhost","root","","mahsol");
 $b=mysqli_query($a,"DELETE FROM `mahsol` WHERE `id`=$id");

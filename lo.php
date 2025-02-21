@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 ?> 
 <?php
 $email=$_POST["a"];
@@ -10,7 +10,12 @@ $row=mysqli_fetch_array($result);
 if($row)
 {
     
-    echo("وارد شدید");
+    $_SESSION["login"]=true;
+    ?>
+    <script>
+        location.replace("index.php");
+    </script>
+    <?php
 }
 else
 {

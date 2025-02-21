@@ -1,5 +1,6 @@
 <?php
-include("header.html");
+include("header.php");
+
 $a=mysqli_connect("localhost","root","","mahsol");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`");
 mysqli_close($a);

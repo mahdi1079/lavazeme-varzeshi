@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 ?>
 <section id="d6" class="col-10 list-inline m-2 card shadow ">
 

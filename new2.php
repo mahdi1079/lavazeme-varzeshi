@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 $name=$_POST["name"];
 $ghymat=$_POST["ghymat"];
 $a=mysqli_connect("localhost","root","","mahsol");
