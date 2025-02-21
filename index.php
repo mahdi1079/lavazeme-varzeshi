@@ -45,7 +45,7 @@ while($row)
 
 
 <div class="card col-12 col-md-3 m-1 " style="width: 18rem;">
-  <img src="..." class="card-img-top " alt="...">
+  <img src="<?php echo($row["img"]); ?>" class="card-img-top " alt="...">
   <div class="card-body">
     <h5 class="card-title"><?php echo($row["name"]);?></h5>
     <p class="card-text"><?php echo($row["ghymat"]);?></p>
