@@ -1,16 +1,16 @@
 <?php
 include("header.php");
-?>
 
-
-
-<?php
-include("header.html");
 $a=mysqli_connect("localhost","root","","mahsol");
 $b=mysqli_query($a,"SELECT `ghymat` FROM `mahsol`");
 $r=$b;
 mysqli_close($a);
+
 ?>
+
+
+
+
 
 <?php
 $row=mysqli_fetch_array($b);

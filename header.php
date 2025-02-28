@@ -48,9 +48,27 @@ session_start();
                 <a class="nav-link active  card m-1 shadow" aria-current="page" href="lo2.php">ورود</a>
               </li>
               <?php } ?>
+              
+
+
+              <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
+                <li class="nav-item">
+                <a class="nav-link active  card m-1 shadow" aria-current="page" href="admin.php">مدیریت</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link active card m-1 shadow" aria-current="page" href="new.php">+</a>
               </li>
+            <?php }else{ ?>
+            <?php } ?>
+
+
+            <!-- <?php if(isset($_SESSION["login"])){ ?>
+                <li class="col-12 col-md h6"><a class="text-muted" href="logout.php">خروج</a></li>
+            <?php }else{ ?>
+            <li class="col-12 col-md h6"><a class="text-muted" href="login.php">ورود</a></li>
+            <?php } ?> -->
+
+
 
             
             </ul>

@@ -11,6 +11,8 @@ if($row)
 {
     
     $_SESSION["login"]=true;
+    $_SESSION["admin"]=$row["admin"];
+
     ?>
     <script>
         location.replace("index.php");
