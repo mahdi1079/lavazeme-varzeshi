@@ -15,7 +15,7 @@ if($b)
 {
  ?>
  <script>
-    location.replace("index.php");
+    location.replace("admin.php");
  </script>   
  <?php
 }else
