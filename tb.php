@@ -60,10 +60,10 @@ include("header.php");
   <h4 id="scrollspyHeading5"></h4>
   
   <p class="d-inline-flex gap-1">
-<button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample11">
+<button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 توضیحات بیشتر  </button>
 </p>
-<div class="collapse" id="collapseExample11">
+<div class="collapse" id="collapseExample">
   <div class=" card-body col-12">
   <ul class="list-group">
   <li class="list-group-item">توپ بسکتبال Jordan Playgound ۸p با ساختار مقاوم خود تفاوتی در سبد ایجاد خواهد کرد. استفاده ویژه ای از نظر استحکام و دوام ارائه می دهد، چسبندگی خاص و اثر ضد لغزش را برای دوستداران بسکتبال حرفه ای برای مدت طولانی دارد. دو رنگ طراحی سفارشی کلاسیک هستند. خطوطی دارد که می تواند در جهش به یک برند جهانی تبدیل شود. این یک موضع بادوام و سازش ناپذیر از خود نشان می دهد. ساخته شده از مواد لاستیکی، فرودگاه گسترده و انعطاف پذیر است. ایده آل برای نگه داشتن و گرفتن است، همچنین دارای بافت غیر لغزنده است.</li>

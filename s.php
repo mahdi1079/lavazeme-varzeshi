@@ -22,7 +22,6 @@ $row=mysqli_fetch_array($b);
   <h4 id="scrollspyHeading1" style="font-style: Calibri Light;">تعداد خرید : <?php $f?> </h4>
   <h4 id="scrollspyHeading5"></h4>
   <p>قیمت :
-    <?php echo($row['ghymat']); ?>
 
  </p>
   <h4 id="scrollspyHeading5"></h4>
@@ -44,7 +43,6 @@ $row=mysqli_fetch_array($b);
   <p></p>
 </div> 
 <?php
- $row=mysqli_fetch_array($b);
 
 
 ?> 
