@@ -11,6 +11,9 @@ include("header.php");
     <p>قیمت:</p>
     <input type="text" name="ghymat">
     <input type="submit" value="اضافه کردن" class="card">
+
+
+    
 </form>
 
 <?php

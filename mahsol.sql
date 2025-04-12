@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 07, 2025 at 07:34 PM
+-- Generation Time: Apr 12, 2025 at 03:48 AM
 -- Server version: 8.3.0
 -- PHP Version: 8.2.18
 
@@ -24,6 +24,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `event`
+--
+
+DROP TABLE IF EXISTS `event`;
+CREATE TABLE IF NOT EXISTS `event` (
+  `img` varchar(100) COLLATE utf8mb3_persian_ci NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_persian_ci;
+
+--
+-- Dumping data for table `event`
+--
+
+INSERT INTO `event` (`img`, `id`) VALUES
+('4/Untitled-2.png', 1),
+('dfgfd.png', 2);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `mahsol`
 --
 
@@ -35,18 +56,19 @@ CREATE TABLE IF NOT EXISTS `mahsol` (
   `img` varchar(100) COLLATE utf8mb3_persian_ci NOT NULL,
   `idd` varchar(20) COLLATE utf8mb3_persian_ci NOT NULL,
   `a` varchar(1000) COLLATE utf8mb3_persian_ci NOT NULL,
+  `tozihat` varchar(6400) COLLATE utf8mb3_persian_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_persian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_persian_ci;
 
 --
 -- Dumping data for table `mahsol`
 --
 
-INSERT INTO `mahsol` (`name`, `ghymat`, `id`, `img`, `idd`, `a`) VALUES
-('لباس تیم ملی آرژانتین 1', 'قیمت: 250,000 ریال', 1, '4/l.jpg', 'l.php', ''),
-('میز تنیس 2', 'قیمت: 2,000,000 ریال\r\n\r\n', 2, '4/322.webp', 'm.php', ''),
-('توپ بسکتبال ', 'قیمت: 700,000 ریال\r\n\r\n', 3, '4/5454.webp', 'tb.php', 'توپ بسکتبال Jordan Playgound ۸p با ساختار مقاوم خود تفاوتی در سبد ایجاد خواهد کرد. استفاده ویژه ای از نظر استحکام و دوام ارائه می دهد، چسبندگی خاص و اثر ضد لغزش را برای دوستداران بسکتبال حرفه ای برای مدت طولانی دارد. دو رنگ طراحی سفارشی کلاسیک هستند. خطوطی دارد که می تواند در جهش به یک برند جهانی تبدیل شود. این یک موضع بادوام و سازش ناپذیر از خود نشان می دهد. ساخته شده از مواد لاستیکی، فرودگاه گسترده و انعطاف پذیر است. ایده آل برای نگه داشتن و گرفتن است، همچنین دارای بافت غیر لغزنده است.\r\n'),
-('توپ فوتبال', 'قیمت: 400,000 ریال', 4, '4/43e7757e670d7031c9b5151e3e6f1f4a67726135_1631625311.webp', 'tf.php', '');
+INSERT INTO `mahsol` (`name`, `ghymat`, `id`, `img`, `idd`, `a`, `tozihat`) VALUES
+('لباس تیم ملی آرژانتین 1', 'قیمت: 250,000 ریال', 1, '4/l.jpg', 'l.php', '', ''),
+('میز تنیس 2', 'قیمت: 2,000,000 ریال\r\n\r\n', 2, '4/322.webp', 'm.php', '', ''),
+('توپ بسکتبال ', 'قیمت: 700,000 ریال\r\n\r\n', 3, '4/5454.webp', 'tb.php', 'توپ بسکتبال Jordan Playgound ۸p با ساختار مقاوم خود تفاوتی در سبد ایجاد خواهد کرد. استفاده ویژه ای از نظر استحکام و دوام ارائه می دهد، چسبندگی خاص و اثر ضد لغزش را برای دوستداران بسکتبال حرفه ای برای مدت طولانی دارد. دو رنگ طراحی سفارشی کلاسیک هستند. خطوطی دارد که می تواند در جهش به یک برند جهانی تبدیل شود. این یک موضع بادوام و سازش ناپذیر از خود نشان می دهد. ساخته شده از مواد لاستیکی، فرودگاه گسترده و انعطاف پذیر است. ایده آل برای نگه داشتن و گرفتن است، همچنین دارای بافت غیر لغزنده است.\n', ''),
+('توپ فوتبال', 'قیمت: 400,000 ریال', 4, '4/43e7757e670d7031c9b5151e3e6f1f4a67726135_1631625311.webp', 'tf.php', '', '');
 
 -- --------------------------------------------------------
 

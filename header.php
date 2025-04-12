@@ -3,7 +3,7 @@
 session_start();
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@ session_start();
 </head>
 <body class=" ">
     <div id="asl">
-   <header class=" ">
+   <header class="">
     <div class="m-1" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         
@@ -58,6 +58,7 @@ session_start();
               <li class="nav-item">
                 <a class="nav-link active card m-1 shadow" aria-current="page" href="new.php">+</a>
               </li>
+            
             <?php }else{ ?>
             <?php } ?>
 

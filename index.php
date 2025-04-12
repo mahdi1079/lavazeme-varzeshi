@@ -49,7 +49,7 @@ while($row)
   <div class="card-body">
     <h5 class="card-title"><?php echo($row["name"]);?></h5>
     <p class="card-text"><?php echo($row["ghymat"]);?></p>
-    <a href="<?php echo($row["idd"]);?>" class="btn btn-primary">خرید</a>
+    <a href="<?php echo($row["idd"]);?>?id=<?php echo($row["id"]); ?>" class="btn btn-primary">خرید</a>
     
   </div>
 </div>
