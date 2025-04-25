@@ -12,7 +12,7 @@ $imageurl=$row["img"];
 
 <form  action="edit_action.php" method="post" enctype="multipart/form-data">
 
-<input type="file" name="image" value="<?php echo($imageurl); ?>"  placeholder="تصویر">
+<input type="file" name="image" placeholder="تصویر" >
 <!-- <input class="col-12 col-md m-2" type="file" name="image" placeholder="تصویر" value="<?php echo($imageurl); ?>"> -->
     <input type="text" name="name" value="<?php echo($row["name"]);?>" >
      <input type="text" name="ghymat" value="<?php echo($row["ghymat"]);?>" >
