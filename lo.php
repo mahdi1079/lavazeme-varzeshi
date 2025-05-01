@@ -9,7 +9,7 @@ $result=mysqli_query($c,"SELECT * FROM `regster` WHERE `pasword`='$password' and
 $row=mysqli_fetch_array($result);
 if($row)
 {
-    
+    $_SESSION["id"]=$row["id"];
     $_SESSION["login"]=true;
     $_SESSION["admin"]=$row["admin"];
 

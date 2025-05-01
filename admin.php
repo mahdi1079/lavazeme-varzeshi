@@ -4,6 +4,19 @@ include("header.php");
 $a=mysqli_connect("localhost","root","","mahsol");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`");
 mysqli_close($a);
+
+if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ 
+
+
+}else
+{
+  ?>
+
+  <script>
+        location.replace("index.php");
+    </script>
+    <?php
+}
 ?>
 
 <section class=" container m-1">
@@ -52,8 +65,7 @@ while($row)
     <a href="<?php echo($row["idd"]);?>?id=<?php echo($row["id"]); ?>" class="btn btn-primary">خرید</a>
     <button><a href="edit.php?id=<?php echo($row["id"]); ?>">*</a></button>
     <button><a href="delete.php?id=<?php echo($row["id"]); ?>">-</a></button>
-    <button><a href="new11.php?id=<?php echo($row["id"]); ?>">ویرایش کردن فولدر</a></button>
-    <button><a href="new10.php?id=<?php echo($row["id"]); ?>">اضافه کردن فولدر</a></button>
+    <!-- <button><a href="new10.php?id=<?php echo($row["id"]); ?>">اضافه کردن فولدر</a></button> -->
   </div>
 </div>
 

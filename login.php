@@ -46,7 +46,7 @@ include("header.php");
 
  <section id="d6">
 <form  name="login" action="login2.php" method="post">
-   <div id="vasat5" class="card col-4 shadow">
+   <div id="vasat5" class="card col-7 shadow">
     <div class="m-1 row">
     <label id="fotbal5">نام کاربری</label>
      <input type="text" id="username" name="a" class="col-5">
