@@ -1,7 +1,7 @@
 <?php
 include("header.php");
 
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`");
 mysqli_close($a);
 ?>
@@ -92,6 +92,8 @@ $row=mysqli_fetch_array($b);
 </div>
 </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="..." crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="..." crossorigin="anonymous"></script>
 <?php
 include("footer.html");
 ?>

@@ -4,7 +4,7 @@ include("header.php");
 <?php
 $email=$_POST["email"];
 $password=$_POST["password"];
-$c=mysqli_connect("localhost","root","","gym");
+$c=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $result=mysqli_query($c,"SELECT * FROM `user` WHERE 'email'='$email'and'password'='$password'");
 mysqli_close($c);
 $row=mysqli_fetch_array($result);

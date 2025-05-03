@@ -5,7 +5,7 @@ include("header.php");
 $id=$_POST["id"];
 $name=$_POST["name"];
 
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"UPDATE `mahsol` SET `tozihat`='$name' WHERE `id`=$id;
 ");
 mysqli_close($a);

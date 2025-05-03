@@ -1,17 +1,9 @@
 <?php
 include("header.php");
 
-if (!isset($_SESSION["id"])) {
 
-  ?>
-  <!-- <script>
-      location.replace("lo2.php");
-  </script> -->
-  <?php
-  exit;
-}
 $id=$_SESSION["id"];
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"SELECT * FROM `sabad` WHERE `idk`=$id");
 $r=$b;
 mysqli_close($a);
@@ -24,6 +16,7 @@ mysqli_close($a);
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"  data-bs-smooth-scroll="true" class=" shadow  p-1 m-5  " tabindex="0">
 
 <?php
+
 $row=mysqli_fetch_array($b);
 while($row)
 {
@@ -54,7 +47,9 @@ while($row)
   <h4 id="scrollspyHeading5"></h4>
   <p></p>
   <h4 id="scrollspyHeading5"></h4>
+  <a href="adres.php">
   <button type="button" class="btn btn-primary m-0 " id="l">خرید</button>
+  </a>
   <script src="l.php"></script>
   <h4 id="scrollspyHeading5"></h4>
   <p></p>
@@ -64,6 +59,7 @@ while($row)
 
 
 <?php
+
 include("footer.html");
 ?>
   

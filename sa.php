@@ -14,7 +14,7 @@ $tedad=$_POST["tedad"];
 // $row=mysqli_fetch_array($b);
 // mysqli_close($a);
 
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"UPDATE `sabad` SET `tedad`='$tedad'WHERE `id`=$id;
 ");
 mysqli_close($a);

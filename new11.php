@@ -2,7 +2,7 @@
 include("header.php");
 
 $id=$_GET["id"];
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`WHERE `id`=$id");
 mysqli_close($a);
 $row=mysqli_fetch_array($b);

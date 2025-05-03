@@ -15,7 +15,7 @@ move_uploaded_file($_FILES["image2"]["tmp_name"],$imageurl2);
 move_uploaded_file($_FILES["image3"]["tmp_name"],$imageurl3);
 
 
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `img`, `img2`, `img3`, `tozihat`) VALUES ('$name','$ghymat','$imageurl','$imageurl2','$imageurl3','$tozih' );");
 mysqli_close($a);
 ?>

@@ -4,7 +4,7 @@ include("header.php");
 <?php
 $email=$_POST["a"];
 $password=$_POST["b"];
-$c=mysqli_connect("localhost","root","","mahsol");
+$c=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $result=mysqli_query($c,"SELECT * FROM `regster` WHERE `pasword`='$password' and `name`='$email'  ");
 $row=mysqli_fetch_array($result);
 if($row)

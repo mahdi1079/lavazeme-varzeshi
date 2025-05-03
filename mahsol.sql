@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 01, 2025 at 03:50 PM
+-- Generation Time: May 02, 2025 at 05:47 PM
 -- Server version: 8.3.0
 -- PHP Version: 8.2.18
 
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `sabad` (
   `id` int NOT NULL AUTO_INCREMENT,
   `tedad` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_persian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_persian_ci;
 
 --
 -- Dumping data for table `sabad`
@@ -130,9 +130,13 @@ INSERT INTO `sabad` (`name`, `ghymat`, `idk`, `idm`, `id`, `tedad`) VALUES
 ('لباس تیم ملی آرژانتین 1', 0, 3, 1, 23, 1),
 ('میز تنیس 2', 0, 3, 2, 24, 0),
 ('tt', 10101, 3, 21, 25, 0),
-('لباس تیم ملی آرژانتین 1', 0, 2, 1, 26, 2),
 ('tt', 10101, 2, 21, 27, 3),
-('میز تنیس 2', 0, 2, 2, 28, 1);
+('لباس تیم ملی آرژانتین 1', 0, 2, 1, 31, 1),
+('میز تنیس 2', 0, 2, 2, 28, 1),
+('لباس تیم ملی آرژانتین 1', 0, 2, 1, 30, 1),
+('لباس تیم ملی آرژانتین 1', 0, 2, 1, 32, 1),
+('tt', 10101, 2, 21, 33, 1),
+('لباس تیم ملی آرژانتین 1', 0, 2, 1, 34, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,12 @@
 <?php
 include("header.php");
 
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`");
 mysqli_close($a);
+$C=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
+$L=mysqli_query($C,"SELECT * FROM `sabad` ");
+mysqli_close($C);
 
 if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ 
 
@@ -57,6 +60,7 @@ while($row)
 
 
 
+
 <div class="card col-12 col-md-3 m-1 " style="width: 18rem;">
   <img src="<?php echo($row["img"]); ?>" class="card-img-top " alt="...">
   <div class="card-body">
@@ -71,6 +75,34 @@ while($row)
 
 <?php
 $row=mysqli_fetch_array($b);
+}
+$row2=mysqli_fetch_array($L);
+while($row2)
+{
+?>
+  <h6 id="scrollspyHeading1" style="font-style: Calibri Light;">نام کالا :<?php echo($row2["name"]);?> </h4>
+  <h6 id="scrollspyHeading5"></h4>
+  <p>قیمت :<?php echo($row2["ghymat"]);?>
+
+ </p>
+ <form action="sa.php" method="post">
+ <h9 class="col-5">کد کاربر :</h9>
+ <h9><?php echo($row2["idk"]);?></h9>
+ <h9 class="col-5">تعداد :</h9>
+
+ <input type="text" value="<?php echo($row2["tedad"]);?>" name="tedad" id="tedad">
+
+
+ <input type="text" value="<?php echo($row2["id"]);?>" name="id" hidden id="id">
+ 
+ <input type="submit" value="اضافه کردن">
+ <button><a href="d-s.php?id=<?php echo($row2["id"]); ?>">-</a></button>
+
+ </form>
+ <hr style="border: none; height: 2px; background-color: black; width: 50%;">
+
+<?php
+$row2=mysqli_fetch_array($L);
 }
 ?>
 

@@ -14,7 +14,7 @@ $image2=$_FILES["image2"]["name"];
 $image3=$_FILES["image3"]["name"];
 
 
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","lavaio_z1079","H5bh2tK@T2eD7f7","lavaio_mahdi");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`WHERE `id`=$id");
 $row=mysqli_fetch_array($b);
 mysqli_close($a);
