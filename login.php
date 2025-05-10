@@ -46,22 +46,22 @@ include("header.php");
 
  <section id="d6">
 <form  name="login" action="login2.php" method="post">
-   <div id="vasat5" class="card col-7 shadow">
+   <div id="vasat5" class="card col-10  shadow">
     <div class="m-1 row">
     <label id="fotbal5">نام کاربری</label>
-     <input type="text" id="username" name="a" class="col-5">
+     <input type="text" id="username" name="a" class="col-7">
     
      
      <label id="fotbal5">رمز</label>
-     <input type="password" id="pasword" name="b"class="col-5">
+     <input type="password" id="pasword" name="b"class="col-7">
     
    
      <label id="fotbal5">تکرار رمز</label>
-     <input type="password" id="repasword" name="c"class="col-5">
+     <input type="password" id="repasword" name="c"class="col-7">
 
 
      <label id="fotbal5">ایمیل</label>
-     <input type="email" id="u" name="u"class="col-5">
+     <input type="email" id="u" name="u"class="col-7">
      </div>
      
 </form>

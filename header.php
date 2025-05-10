@@ -1,5 +1,8 @@
 <?php
 session_start();
+//$_SESSION["sql"]=true;
+unset($_SESSION["sql"]);
+
 ?>
 
 <!DOCTYPE html >
@@ -13,8 +16,13 @@ session_start();
     
     <style>
       body{font-style: unset;}
+      
     </style>
+  
+
 </head>
+
+
 <body class=" ">
     <div id="asl">
    <header class="">
@@ -22,9 +30,10 @@ session_start();
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         
           
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
           <div class="collapse navbar-collapse shadow " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -81,13 +90,13 @@ session_start();
           </div>
         </div>
       </nav>
+   
 </header>
 
    <main id="div2" class="container align-items-start justify-content-evenly col-12">
     
     <div class="container">
         
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="..." crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="..." crossorigin="anonymous"></script>
+   
        
    
